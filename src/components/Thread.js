@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 
 const estilo = {
   divEstilo: {
@@ -7,11 +8,18 @@ const estilo = {
   }
 };
 
-export default function Thread({ thread }) {
+export default function Thread(props) {
+  const id = props.thread.slug
   return (
-    <div style={estilo.divEstilo}>
-      <h1>{thread.title}</h1>
-      <h3>{thread.total_replies}</h3>
+    <div>
+
+      <div style={estilo.divEstilo}>
+        <h1>{props.thread.title}</h1>
+        <h3>{props.thread.total_replies}</h3>
+        <Link to={"/thread/"+props.thread.slug}>thread</Link>
+        
+      </div>
+
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Link } from "react-router-dom";
-
 import Routes from "./routes";
 
 function App() {
@@ -8,9 +7,8 @@ function App() {
     <BrowserRouter>
       <header>
         <Link to="/">Home</Link>
-        <Link to="/sobre" style={{ marginLeft: 8 }}>
-          Sobre
-        </Link>
+        <Link to="/sobre" style={{ marginLeft: 8 }}></Link>         
+        {/* <Link to="/thread">thread</Link>       */}
       </header>
       <Routes />
     </BrowserRouter>

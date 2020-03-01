@@ -13,11 +13,10 @@ function Home() {
 
   return (
     <div>
-      <p>Home!2</p>
-
-      {thread.map(t => {
-        return <Thread thread={t}></Thread>;
-      })}
+        <p>Home!2</p>
+        {thread.map(t => {
+          return <Thread thread={t}></Thread>;
+        })}   
     </div>
   );
 }
