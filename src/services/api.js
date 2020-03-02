@@ -7,3 +7,11 @@ export const getAll = () => {
       console.log("Erro no get all", e);
     });
 };
+
+export const getSlug = (slug) => {
+  return fetch(URL + slug)
+    .then(r => r.json())
+    .catch(e => {
+      console.log("Erro no get slug", e);
+    });
+};
