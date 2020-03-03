@@ -6,8 +6,9 @@ function App() {
   return (
     <BrowserRouter>
       <header>
+        <h2>Forum</h2>
         <Link to="/">Home</Link>
-        <Link to="/sobre" style={{ marginLeft: 8 }}></Link>         
+        <Link to="/sobre" style={{ marginLeft: 8 }}></Link>
         {/* <Link to="/thread">thread</Link>       */}
       </header>
       <Routes />

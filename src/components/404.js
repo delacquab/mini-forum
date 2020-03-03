@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function QZQ() {
     return (
         <div>
-            <Link to={"/"}>Voltar</Link>
+            <Link data-test="voltar" to={"/"}>Voltar</Link>
             <h1>404</h1>
         </div>
     );

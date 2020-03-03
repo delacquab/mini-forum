@@ -13,11 +13,11 @@ export default function Thread(props) {
   return (
     <div>
 
-      <div style={estilo.divEstilo}>
+      <div data-test="thread" style={estilo.divEstilo}>
         <h1>{props.thread.title}</h1>
         <h3>{props.thread.total_replies}</h3>
-        <Link to={"/thread/"+props.thread.slug}>thread</Link>
-        
+        <Link data-test="link" to={"/thread/" + props.thread.slug}>Continuar lendo</Link>
+
       </div>
 
     </div>
