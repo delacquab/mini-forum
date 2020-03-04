@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter, Link } from "react-router-dom";
 import Routes from "./routes";
+import '../src/components/folhaestilo.css'
 
 function App() {
   return (
     <BrowserRouter>
-      <header>
+      <header className="estilodiv">
         <h2>Forum</h2>
         <Link to="/">Home</Link>
         <Link to="/sobre" style={{ marginLeft: 8 }}></Link>

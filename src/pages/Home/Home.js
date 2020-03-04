@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { getAll } from "../../services/api";
 import Thread from "../../components/Thread";
 
+import '../../components/folhaestilo.css'
+
 function Home() {
   const [thread, setThread] = useState([]);
 
@@ -12,8 +14,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
-        <p>Home!2</p>
+    <div className="estilodiv">
         {thread.map(t => {
           return <Thread thread={t}></Thread>;
         })}   
